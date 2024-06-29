@@ -15,6 +15,12 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.qrcode{
+    position: absolute;
+    bottom: -14px;
+    right: 30px;
 }
 
 .search-bar {
@@ -137,6 +143,7 @@
                         </div>
                     </div>
                 </div>
+                <a href="qcode.html"><img class="qrcode" src="assets/qrcode.png" alt="" draggable="false"></a>
             </div>
 
 
@@ -161,5 +168,14 @@
             window.location.href = 'login.html';
         }
     };</script>
+     <script>document.addEventListener("DOMContentLoaded", function() {
+        const accountTypes = document.querySelectorAll('.friend > div');
+        accountTypes.forEach(function(accountType) {
+            accountType.addEventListener('click', function() {
+                window.location.href = 'payloan2.html';
+            });
+            accountType.style.cursor = 'pointer';  // Optional: Change cursor to pointer to indicate clickability
+        });
+    });</script>
 </body>
 </html>
