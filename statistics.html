@@ -90,8 +90,8 @@
     </header> -->
     <main>
         <div class="mobcontainer">
-
-            <h3 class="appheading">Statistics</h3>
+            <img style="margin-right: 320px;padding-top: 10px;" src="assets/back_arrow.svg" alt="bck-btn" onclick="goBack()">
+            <h3  class="appheading">Statistics</h3>
             <img src="assets/Statistics.png" alt="" draggable="false">
 
             <div class="statbuttonmain">
@@ -132,7 +132,7 @@
 </div>
         
     </main>
-    <!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
     <script>window.onload = function() {
         // Retrieve user data from localStorage
         const user = JSON.parse(localStorage.getItem('user'));
@@ -146,6 +146,9 @@
             // Redirect to login page if no user data is found
             window.location.href = 'login.html';
         }
-    };</script>
+    };
+    function goBack() {
+            window.history.back();
+        }</script>
 </body>
 </html>

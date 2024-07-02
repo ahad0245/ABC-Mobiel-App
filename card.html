@@ -119,6 +119,8 @@
 <body>
     <main>
         <div class="mobcontainer active">
+            <img style="margin-right: 320px;padding-top: 10px;" src="assets/back_arrow.svg" alt="bck-btn" onclick="goBack()">
+
             <h3 class="appheading">Cards</h3>
             <h3 style="text-align: left; margin-left: 20px;" class="appheading">Your Cards</h3>
             <h5 style="text-align: left; margin-left: 20px;">Manage with Ease.</h5>
@@ -135,31 +137,30 @@
                 <!-- Card List -->
                 <div class="card-list" id="cardList">
                   
-                    <div class="card" onclick="openSetLimit()">
-                        <div class="card-info">
+                    <div class="card" >
+                        
                             <img src="assets/card/1.png" alt="Card 1" draggable="false">
                     </div>
                     <div class="card">
-                        <div class="card-info">
+                        
                             <img src="assets/card/2.png" alt="Card 2" draggable="false">
                     </div>
-                    <div class="card">
-                        <div class="card-info">
-                            <img src="assets/card/3.png" alt="Card 3" draggable="false">
-                    </div>
+                    
                 </div>
         
                 <!-- Set Limit Form -->
                 
             </div>
-                    </div>
+                    
             
 
 
             <div id="navbar-container"></div>
         </div>
     </main>
-
+<script>function goBack() {
+    window.history.back();
+}</script>
     
 </body>
 </html>

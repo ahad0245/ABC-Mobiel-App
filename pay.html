@@ -160,6 +160,8 @@
     </header> -->
     <main>
         <div class="mobcontainer">
+            <img style="margin-right: 320px;padding-top: 10px;" src="assets/back_arrow.svg" alt="bck-btn" onclick="goBack()">
+
 
 
             
@@ -184,15 +186,15 @@
             </section>
             <section class="transactions-section">
                 <h3>Nearby Friends</h3>
-                <a href="#">View All</a>
+                <a href="sendmoney.html">View All</a>
                 
             </section>
             <section class="actions-section">
-                <button><img src="assets/pay/1.png" alt="" draggable="false"></button>
-                <button><img src="assets/pay/2.png" alt="" draggable="false"></button>
-                <button><img src="assets/pay/3.png" alt=""draggable="false"></button>
-                <button><img src="assets/pay/4.png" alt=""draggable="false"></button>
-                <button><img src="assets/pay/5.png" alt=""draggable="false"></button>
+                <button><a href="sendmoney.html"><img src="assets/pay/1.png" alt="" draggable="false"></a></button>
+                <button><a href="sendmoney2.html"></a><img src="assets/pay/2.png" alt="" draggable="false"></a></button>
+                <button><a href="sendmoney2.html"></a><img src="assets/pay/3.png" alt=""draggable="false"></a></button>
+                <button><a href="sendmoney2.html"></a><img src="assets/pay/4.png" alt=""draggable="false"></a></button>
+                <button><a href="sendmoney2.html"></a><img src="assets/pay/5.png" alt=""draggable="false"></a></button>
                
                 
             </section>
@@ -216,6 +218,9 @@
             // Redirect to login page if no user data is found
             window.location.href = 'login.html';
         }
-    };</script>
+    };
+    function goBack() {
+            window.history.back();
+        }</script>
 </body>
 </html>

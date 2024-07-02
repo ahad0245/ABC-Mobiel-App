@@ -95,6 +95,8 @@
     </header> -->
     <main>
         <div class="mobcontainer">
+            <img style="margin-right: 320px;padding-top: 10px;" src="assets/back_arrow.svg" alt="bck-btn" onclick="goBack()">
+
             <div class="notifications"> 
                 <h2>Loan Pay</h2>
                
@@ -126,6 +128,11 @@
             // Redirect to login page if no user data is found
             window.location.href = 'login.html';
         }
-    };</script>
+    };
+    
+    function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

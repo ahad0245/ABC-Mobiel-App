@@ -74,6 +74,8 @@
 <body>
     <main>
         <div class="mobcontainer">
+            <img style="margin-right: 320px;padding-top: 10px;" src="assets/back_arrow.svg" alt="bck-btn" onclick="goBack()">
+
             <div class="container">
                 <img id="profilePicture" src="" alt="Profile Image" class="profile-img">
                 <div id="userName" class="name">Alex Wilson</div>
@@ -135,6 +137,9 @@
                 window.location.href = 'login.html';
             }
         };
+        function goBack() {
+            window.history.back();
+        }
     </script>
 </body>
 </html>
