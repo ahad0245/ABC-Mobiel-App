@@ -116,10 +116,16 @@
             
         <div id="navbar-container"></div>
 </div>
+
         
     </main>
     <!-- <script src="script.js"></script> -->
-    <script>window.onload = function() {
+    <script>
+    document.querySelector(".mobbutton").addEventListener("click", function() {
+    window.location.href = 'sendmoney.html';
+});
+    
+    window.onload = function() {
         // Retrieve user data from localStorage
         const user = JSON.parse(localStorage.getItem('user'));
         if (user) {

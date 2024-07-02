@@ -161,6 +161,7 @@
 </div>
         
     </main>
+    
     <!-- <script src="script.js"></script> -->
     <script>window.onload = function() {
         // Retrieve user data from localStorage
@@ -184,6 +185,14 @@
             });
             accountType.style.cursor = 'pointer';  // Optional: Change cursor to pointer to indicate clickability
         });
-    });</script>
+    });
+    const button = document.querySelector(".lists");
+
+// Add an event listener to the button
+button.addEventListener('click', function() {
+    // Redirect to the email verification page
+    window.location.href = 'paybill3.html';
+});
+    </script>
 </body>
 </html>

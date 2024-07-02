@@ -118,6 +118,14 @@
             // Redirect to login page if no user data is found
             window.location.href = 'login.html';
         }
-    };</script>
+    };
+    const button = document.querySelector(".bill-type");
+
+// Add an event listener to the button
+button.addEventListener('click', function() {
+    // Redirect to the email verification page
+    window.location.href = 'paybill2.html';
+});
+    </script>
 </body>
 </html>
