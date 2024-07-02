@@ -37,6 +37,7 @@ main {
     border-radius: 10px;
     height: 800px;
     position: relative;
+    background-color: #fff;
 }
 .h2heading{
     font-family: Poppins;
